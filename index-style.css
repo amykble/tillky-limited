@@ -26,7 +26,7 @@ h1, p {
 /* Background */
 .hp-bg-img {
   background-image: url("homepage-background-image-dark.jpg");
-  height: 50vh;
+  height: 100vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,57 +36,95 @@ h1, p {
   z-index: -2;
 }
 
-/* Homepage Title */
-.hp-bg-img h1 {
-  margin-top: 40vh;
-  margin-left: 10vw;
-  font-family: 'Iceland', cursive;
-  color: rgb(254, 104, 6);
+/* Navigation */
+.hamburger-div {
+  width: 30px;
+  height: 4px;
+  background-color: rgb(0, 231, 84);
+  margin: 6px 0;
 }
 
-/* Homepage Main Container */
-.hp-mn-container {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 255, 255);
-}
-
-/* Homepage About */
-.hp-abt-container {
-  margin-top: 50vh;
-  width: 60vw;
-  margin-left: 5vw;
-  margin-right: 35vw;
-}
-
-.hp-abt-container p {
-  padding-top: 5vh;
-  font-family: 'Barlow', sans-serif;
-  text-align: left;
-  line-height: 30px;
-  color: rgb(55, 55, 55);
-}
-
-/* Homepage Links */
-.links-container {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+.navbar {
+  box-shadow: 0 5px 5px -5px rgba(0,0,0, 0.5);
   position: fixed;
-  bottom: 0;
+  top: 0;
+  width: 100%;
   z-index: 2;
-  background-color: rgb(255, 255, 255);
-  height: 10vh;
+}
+
+.bg-white {
+  background-color: rgb(250, 250, 250) !important;
+}
+
+.navbar-brand {
+  font-family: 'Barlow', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  color: rgb(0, 231, 84) !important;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: rgb(0, 173, 63) !important;
+  text-decoration: overline;
+}
+
+.active {
+  color: rgb(0, 173, 63) !important;
+  text-decoration: overline;
+}
+
+/* Homepage Title */
+.hp-title-container {
+  width: 70vw;
+  margin: 0px auto;
   text-align: center;
 }
 
-.links-container a {
-  color: rgb(0, 0, 0);
-  font-family: 'Barlow', sans-serif;
-  padding-right: 1.5vw;
-  padding-left: 1.5vw;
+.hp-title-container h1 {
+  margin-top: 30vh;
+  font-family: 'Hepta Slab', serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgb(0, 231, 84);
 }
-.links-container a:hover {
-  text-decoration: line-through;
+
+.hp-title-container h2 {
+  margin-top: 3vh;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* Main Content Container */
+.main-hp-container {
+  width: 80vw;
+  height: 100vh;
+  margin: 25vh auto 0 auto;
+  background-color: rgb(250, 250, 250);
+  border-radius: 20px 20px 0 0;
+}
+
+.main-hp-container h1 {
+  padding-top: 5vh;
+  margin: 0 5vw;
+  font-family: 'Hepta Slab', serif;
+  color: rgb(0, 147, 231);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.main-hp-container h2 {
+  padding-top: 2vh;
+  margin: 0 5vw;
+  font-family: 'Barlow', sans-serif;
+  color: rgb(20, 20, 20);
+  font-size: 1rem;
+  text-align: center;
 }
