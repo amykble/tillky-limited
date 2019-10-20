@@ -16,7 +16,7 @@ font-family: 'Rubik', sans-serif;
 
 --- PHOTOS USED ---
 Homepage Background Image by Joshua Kimsey from Pixabay
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 --- COLOURS USED ---
 #1A1A1D
