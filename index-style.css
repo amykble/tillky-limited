@@ -12,9 +12,6 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   text-decoration: none;
   font-size: 16px;
 }
-img {
-  height: 16px;
-}
 
 /* Background */
 .hp-bg-img {
@@ -60,10 +57,14 @@ img {
   color: #FAFAFA !important;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 479px) {
   .navbar-brand {
     font-size: 0.8em;
   }
+}
+
+.linkedin-logo {
+  height: 20px;
 }
 
 .nav-link {
@@ -105,7 +106,7 @@ img {
   color: #FAFAFA;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 991px) {
   .hp-title-container h1 {
     font-size: 2rem;
   }
@@ -114,9 +115,13 @@ img {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 479px) {
   .hp-title-container h1 {
     margin-top: 15vh;
+    font-size: 1.6rem;
+  }
+  .hp-title-container h2 {
+    font-size: 1rem;
   }
 }
 
@@ -128,9 +133,9 @@ img {
   background-color: #FAFAFA;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   .main-hp-container {
-    margin: 10vh auto 0 auto;
+    margin: 15vh auto 0 auto;
   }
 }
 
@@ -160,16 +165,18 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding: 0 30px 30px 30px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .cards-container {
     grid-template-columns: 1fr;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 }
 
@@ -178,6 +185,12 @@ img {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    height: 300px;
+  }
 }
 
 .card:hover {
@@ -237,25 +250,34 @@ img {
 }
 
 .zoom-card h2 {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   letter-spacing: 1.5px;
   color: #FAFAFA;
-  top: 50px;
+  top: 60px;
 }
 
 .zoom-card h1 {
   font-family: 'Hepta Slab', serif;
   text-transform: none;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #66FCF1;
   top: 75px;
 }
 
 .zoom-card h3 {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   letter-spacing: 1.5px;
   color: #FAFAFA;
-  top: 125px;
+  top: 105px;
+}
+
+@media screen and (max-width: 991px) {
+  .zoom-card h1 {
+    font-size: 1.1rem;
+  }
+  .zoom-card h3 {
+    top: 100px;
+  }
 }
 
 .zoom-card-image-container:hover h2,
@@ -275,8 +297,8 @@ footer {
   grid-template-rows: auto;
   grid-template-areas:
     ". footer-top footer-top footer-top footer-top footer-top ."
-    ". footer-nav-grid footer-connect-grid footer-connect-grid footer-amy-grid footer-amy-grid ."
-    ". footer-info-2 footer-info-2 footer-info-2 footer-info-2 footer-info-2 ."
+    ". footer-nav-grid footer-connect-grid footer-connect-grid footer-amy-grid particles-grid ."
+    ". footer-info-2 footer-info-2 footer-info-2 footer-info-2 particles-grid ."
     ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid .";
   grid-row-gap: 40px;
   background-color: #0B0C10;
@@ -286,13 +308,27 @@ footer {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
+  footer {
+    grid-template-areas:
+      ". footer-top footer-top footer-top footer-top footer-top ."
+      ". footer-nav-grid . footer-connect-grid . footer-amy-grid ."
+      ". footer-info-2 footer-info-2 footer-info-2 footer-info-2 particles-grid ."
+      ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid .";
+  }
+}
+
+@media screen and (max-width: 479px) {
   footer {
     grid-template-areas:
       ". footer-top footer-top footer-top footer-top footer-top ."
       ". footer-nav-grid . footer-connect-grid . footer-amy-grid ."
       ". footer-info-2 footer-info-2 footer-info-2 footer-info-2 footer-info-2 ."
-      ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid .";
+      ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid ."
+      ". particles-grid particles-grid particles-grid particles-grid particles-grid .";
+  }
+  #particles-js-small {
+    height: 150px;
   }
 }
 
@@ -317,6 +353,11 @@ footer {
 
 .footer-info-2 {
   grid-area: footer-info-2;
+}
+
+#particles-js-small {
+  display: block;
+  grid-area: particles-grid;
 }
 
 .footer-title {

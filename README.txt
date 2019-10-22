@@ -16,7 +16,8 @@ font-family: 'Rubik', sans-serif;
 
 --- PHOTOS USED ---
 Homepage Background Image by Joshua Kimsey from Pixabay
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+LinkedIn Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+Fiber Optic Cable Image by <a href="https://pixabay.com/users/PawinG-2524720/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2633608">PawinG</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2633608">Pixabay</a>
 
 --- COLOURS USED ---
 #1A1A1D
@@ -24,5 +25,6 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 #C5C6C7
 #66FCF1
 #45A29E
+#FAFAFA
 
 --- TODO ---
