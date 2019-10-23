@@ -27,7 +27,8 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* Navigation */
-.hamburger-div {
+.hamburger-span {
+  display: block;
   width: 30px;
   height: 4px;
   background-color: #66FCF1;
@@ -327,7 +328,7 @@ footer {
       ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid ."
       ". particles-grid particles-grid particles-grid particles-grid particles-grid .";
   }
-  #particles-js-small {
+  #js-particles-small {
     height: 150px;
   }
 }
@@ -355,7 +356,7 @@ footer {
   grid-area: footer-info-2;
 }
 
-#particles-js-small {
+#js-particles-small {
   display: block;
   grid-area: particles-grid;
 }
