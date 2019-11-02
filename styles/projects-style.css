@@ -1,0 +1,121 @@
+/* !!! SETUP !!! */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+}
+body, h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.main-pt-container {
+  background-color : #FAFAFA;
+  color: #0B0C10;
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  padding-top: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: calc(100vh - 50px) 100vh 100vh 100vh;
+  grid-template-areas: "section-1"
+                       "section-2"
+                       "section-3"
+                       "section-4";
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 {
+  grid-area: section-1;
+  position: relative;
+  z-index: 1;
+}
+
+.section-2 {
+  grid-area: section-2;
+  position: relative;
+  z-index: 0;
+}
+
+.section-2::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 125%;
+  top: -75%;
+  left: 0;
+  background-color: #45A29E;
+  transform: skewY(10deg);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.section-3 {
+  grid-area: section-3;
+  position: relative;
+  z-index: 1;
+}
+
+.section-4 {
+  grid-area: section-4;
+  position: relative;
+  z-index: 0;
+}
+
+.section-4::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 125%;
+  top: -75%;
+  left: 0;
+  background-color: #45A29E;
+  transform: skewY(-10deg);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.project {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  background: #FAFAFA;
+  box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.6);
+  color: #0B0C10;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+ul li {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+ul li:before {
+  content: "\f138";
+  font-family: "FontAwesome";
+  color: #0B0C10;
+  font-size: 1.5rem;
+  left: 0rem;
+  top: 0rem;
+  padding-top: 0.75rem;
+  position: absolute;
+}
