@@ -1,0 +1,185 @@
+.main-ct-container {
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  align-items: center;
+  background: #45A29E;
+  position: relative;
+  z-index: 1;
+}
+
+.main-ct-container::after {
+  content: '';
+  position: absolute;
+  overflow: hidden;
+  top: -40vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #FAFAFA;
+  transform: skewY(10deg);
+  z-index: -1;
+}
+
+.card-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 25vh 0 20vh 0;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  background: #FAFAFA;
+  box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.6);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "card-title card-title card-title"
+                       "card-linkedin card-email card-phone";
+}
+
+.card-title {
+  grid-area: card-title;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0B0C10;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title h1 {
+  font-family: 'Hepta Slab', serif;
+  color: #66FCF1;
+  font-size: 1.7rem;
+}
+
+.card-linkedin {
+  grid-area: card-linkedin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(11, 12, 17, 0.3);
+  margin: 15px 0px;
+}
+
+.card-email {
+  grid-area: card-email;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-phone {
+  grid-area: card-phone;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(11, 12, 17, 0.3);
+  margin: 15px 0px;
+}
+
+.card-linkedin i, .card-email i, .card-phone i {
+  color: #45A29E;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-linkedin h2, .card-email h2, .card-phone h2,
+.card-linkedin a, .card-email a, .card-phone a {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  color: #45A29E;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+}
+
+.card-linkedin a:focus, .card-email a:focus, .card-phone a:focus {
+  border-bottom: 1px solid rgba(11, 12, 17, 0.6);
+}
+
+.card-linkedin h2:focus::after, .card-linkedin h2:hover::after,
+.card-email h2:focus::after, .card-email h2:hover::after,
+.card-phone h2:focus::after, .card-phone h2:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.card-linkedin h2::after, .card-email h2::after, .card-phone h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0B0C10;
+  transition: transform 500ms ease-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-ct-container {
+    grid-template-columns: 5vw auto 5vw;
+  }
+
+  .card-container {
+    margin: 20vh 0 15vh 0;
+    width: 90vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 200px 200px;
+    grid-template-areas: "card-title"
+                         "card-linkedin"
+                         "card-email"
+                         "card-phone";
+  }
+
+  .card-title h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-linkedin {
+    border-right: none;
+    border-bottom: 1px solid rgba(11, 12, 17, 0.3);
+    margin: 0 10px;
+  }
+
+  .card-phone {
+    border-left: none;
+    border-top: 1px solid rgba(11, 12, 17, 0.3);
+    margin: 0 10px;
+  }
+
+  .card-linkedin i, .card-email i, .card-phone i {
+    color: #45A29E;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1.7rem;
+  }
+
+  .card-linkedin a, .card-email a, .card-phone a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-title h1 {
+    font-size: 1.1rem;
+  }
+
+  .card-linkedin i, .card-email i, .card-phone i {
+    color: #45A29E;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-linkedin h2, .card-email h2, .card-phone h2 {
+    font-size: 1.2rem;
+  }
+}
