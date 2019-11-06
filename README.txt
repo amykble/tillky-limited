@@ -9,9 +9,8 @@
 
 
 --- USED FONT FAMILIES ---
-font-family: 'Hepta Slab', serif;
-font-family: 'Barlow', sans-serif;
-font-family: 'Rubik', sans-serif;
+font-family: 'Hepta Slab', serif; - Nav Brand, HP Title, HP Title 2
+font-family: 'Barlow', sans-serif; - Nav Links, HP Phrase, HP Phrase 2
 
 
 --- PHOTOS USED ---
