@@ -25,5 +25,3 @@ Fiber Optic Cable Image by <a href="https://pixabay.com/users/PawinG-2524720/?ut
 #66FCF1
 #45A29E
 #FAFAFA
-
---- TODO ---

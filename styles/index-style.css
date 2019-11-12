@@ -56,7 +56,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .bg-black {
-  background-color: #0B0C10; !important;
+  background-color: #0B0C10 !important;
 }
 
 .navbar-brand {
@@ -168,6 +168,14 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 
 .zoom-image-2 {
   background-image: url('../images/vpe.jpg');
+}
+
+.zoom-image-3 {
+  background-image: url('../images/nc.jpg');
+}
+
+.zoom-image-4 {
+  background-image: url('../images/nc2.jpg');
 }
 
 .zoom-card-image {
