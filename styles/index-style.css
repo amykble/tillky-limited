@@ -1,12 +1,20 @@
 /* !!! SETUP !!! */
 @viewport {
   width: device-width;
-  zoom: 1.0;
+  zoom: 1;
 }
 @-ms-viewport {
   width: device-width;
 }
-body, h1, h2, h3, h4, h5, h6, p, a {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -38,7 +46,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: #66FCF1;
+  background-color: #66fcf1;
   margin: 6px 0;
 }
 
@@ -48,7 +56,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .navbar {
-  box-shadow: 0 5px 5px -5px rgba(0,0,0, 0.5);
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -56,13 +64,13 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .bg-black {
-  background-color: #0B0C10 !important;
+  background-color: #0b0c10 !important;
 }
 
 .navbar-brand {
-  font-family: 'Hepta Slab', serif;
+  font-family: "Hepta Slab", serif;
   font-weight: bold;
-  color: #FAFAFA !important;
+  color: #fafafa !important;
 }
 
 .linkedin-logo {
@@ -70,20 +78,20 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .nav-link {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  color: #66FCF1 !important;
+  color: #66fcf1 !important;
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
 .nav-link:hover {
-  color: #FAFAFA !important;
+  color: #fafafa !important;
 }
 
 .active {
-  color: #FAFAFA !important;
+  color: #fafafa !important;
 }
 
 /* HOMEPAGE */
@@ -96,18 +104,18 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 
 .hp-title-container h1 {
   margin-top: 30vh;
-  font-family: 'Hepta Slab', serif;
+  font-family: "Hepta Slab", serif;
   font-size: 2.5rem;
   font-weight: bolder;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .hp-title-container h2 {
   margin-top: 3vh;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   font-size: 1.9rem;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 /* Main Content Container */
@@ -115,15 +123,15 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   width: 100%;
   height: auto;
   margin: 20vh auto 0 auto;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .main-hp-container h1 {
   padding-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  font-family: 'Hepta Slab', serif;
-  color: #45A29E;
+  font-family: "Hepta Slab", serif;
+  color: #45a29e;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -133,8 +141,8 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   padding-bottom: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  font-family: 'Barlow', sans-serif;
-  color: #0B0C10;
+  font-family: "Barlow", sans-serif;
+  color: #0b0c10;
   font-size: 1rem;
   text-align: center;
 }
@@ -154,28 +162,32 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 .card {
   height: 350px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 0.5s;
 }
 
 .card:hover {
-  box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .zoom-image-1 {
-  background-image: url('../images/ccs.jpg');
+  background-image: url("../images/ccs.jpg");
+  background-position: center;
 }
 
 .zoom-image-2 {
-  background-image: url('../images/vpe.jpg');
+  background-image: url("../images/vpe.jpg");
+  background-position: center;
 }
 
 .zoom-image-3 {
-  background-image: url('../images/nc.jpg');
+  background-image: url("../images/fe.jpg");
+  background-position: -11rem;
 }
 
 .zoom-image-4 {
-  background-image: url('../images/nc2.jpg');
+  background-image: url("../images/nc2.jpg");
+  background-position: center;
 }
 
 .zoom-card-image {
@@ -184,7 +196,6 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   border-radius: 10px 10px 10px 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   transition: ease 1s;
 }
 
@@ -217,7 +228,9 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   display: block;
 }
 
-.zoom-card h1, .zoom-card h2, .zoom-card a {
+.zoom-card h1,
+.zoom-card h2,
+.zoom-card a {
   display: none;
   text-align: center;
   margin: 0 auto;
@@ -229,24 +242,24 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 
 .zoom-card h2 {
   font-size: 1.7rem;
-  color: #FAFAFA;
+  color: #fafafa;
   top: 60px;
 }
 
 .zoom-card h1 {
-  font-family: 'Hepta Slab', serif;
+  font-family: "Hepta Slab", serif;
   line-height: 1.5rem;
   font-size: 1rem;
-  color: #66FCF1;
+  color: #66fcf1;
   top: 100px;
 }
 
 .zoom-card a {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1.5px;
-  color: #FAFAFA;
+  color: #fafafa;
   top: 250px;
 }
 
@@ -272,8 +285,8 @@ footer {
     ". footer-info-2 footer-info-2 footer-info-2 footer-info-2 particles-grid ."
     ". footer-title-grid footer-title-grid footer-title-grid footer-title-grid footer-title-grid .";
   grid-row-gap: 40px;
-  background-color: #0B0C10;
-  font-family: 'Barlow', sans-serif;
+  background-color: #0b0c10;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   margin: 0 auto;
   padding-bottom: 40px;
@@ -281,7 +294,7 @@ footer {
 
 .footer-info {
   grid-area: footer-top;
-  border-top: 1px solid #45A29E;
+  border-top: 1px solid #45a29e;
   margin-top: 40px;
   padding-top: 20px;
 }
@@ -310,25 +323,29 @@ footer {
 .footer-title {
   grid-area: footer-title-grid;
   font-size: 1rem;
-  font-family: 'Hepta Slab', serif;
-  color: #FAFAFA;
+  font-family: "Hepta Slab", serif;
+  color: #fafafa;
 }
 
-.footer-info p, .footer-navigation p, .footer-connect p, .footer-amy p {
+.footer-info p,
+.footer-navigation p,
+.footer-connect p,
+.footer-amy p {
   font-size: 0.75rem;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
-.footer-navigation a, .footer-connect a, .footer-amy a {
+.footer-navigation a,
+.footer-connect a,
+.footer-amy a {
   font-size: 0.75rem;
-  color: #45A29E;
+  color: #45a29e;
 }
 
 .footer-info-2 p {
   font-size: 0.75rem;
-  color: rgba(250,250,250, 0.4);
+  color: rgba(250, 250, 250, 0.4);
 }
-
 
 @media screen and (max-width: 991px) {
   /* Homepage Title */
