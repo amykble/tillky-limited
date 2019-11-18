@@ -213,8 +213,9 @@ a {
   overflow: hidden;
 }
 
-.zoom-card-image-container:hover .zoom-card-image,
-.zoom-card-image-container:focus .zoom-card-image {
+.zoom-card-image-container:hover,
+.zoom-card-image-container:focus,
+.zoom-card-image {
   transform: scale(1.2);
 }
 
