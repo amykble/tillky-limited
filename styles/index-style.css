@@ -211,11 +211,11 @@ a {
   height: 100%;
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
+  transition: transform ease 1s;
 }
 
 .zoom-card-image-container:hover,
-.zoom-card-image-container:focus,
-.zoom-card-image {
+.zoom-card-image-container:focus {
   transform: scale(1.2);
 }
 
@@ -228,7 +228,7 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(11, 12, 17, 0.7);
-  transition: ease 1s;
+  transition: transform ease 1s;
 }
 
 .zoom-card-image-container:hover .zoom-card-image::before,
