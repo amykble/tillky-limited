@@ -216,7 +216,7 @@ a {
 
 .zoom-card-image-container:hover,
 .zoom-card-image-container:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .zoom-card-image::before {
