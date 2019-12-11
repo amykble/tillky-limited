@@ -133,7 +133,6 @@
   .card-container {
     display: block;
     width: 80vw;
-    height: 100vh;
     margin: 0 10vw 25vh 10vw;
   }
 
@@ -153,6 +152,10 @@
     padding-top: 40px;
     border: none;
     margin: 0;
+  }
+
+  .card-phone {
+    padding-bottom: 40px;
   }
 
   .card-linkedin i, .card-email i, .card-phone i {
