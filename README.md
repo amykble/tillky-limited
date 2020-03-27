@@ -27,7 +27,7 @@ This website is a portfolio for Tillky Limited, an engineering company in the te
 
 ### Technologies Used
 
-**Bootstrap**
+**Bootstrap:**
 I used some bootstrap in this project, mostly for the navigation, to make it responsive and easy to manage.  I'm not a hige fan of bootstrap, I had problems when trying to override colours, having to resort to bad practises to get what I wanted.  In the future, I might look into [Tailwind CSS](https://tailwindcss.com/), which I've heard is a lightweight css framework that a lot of developers enjoy using.
 
 **Particles js:**
