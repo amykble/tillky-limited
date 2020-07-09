@@ -25,7 +25,7 @@ a {
 
 /* Background */
 .hp-bg-img {
-	background-image: url('../images/fibre-background.jpg');
+	background-image: url('../../images/fibre-background.jpg');
 	height: 100vh;
 	width: 100%;
 	background-position: top;
@@ -146,22 +146,22 @@ a {
 }
 
 .zoom-image-1 {
-	background-image: url('../images/ccs.jpg');
+	background-image: url('../../images/ccs.jpg');
 	background-position: center;
 }
 
 .zoom-image-2 {
-	background-image: url('../images/vpe.jpg');
+	background-image: url('../../images/vpe.jpg');
 	background-position: center;
 }
 
 .zoom-image-3 {
-	background-image: url('../images/fe.jpg');
+	background-image: url('../../images/fe.jpg');
 	background-position: right;
 }
 
 .zoom-image-4 {
-	background-image: url('../images/nc2.jpg');
+	background-image: url('../../images/nc2.jpg');
 	background-position: center;
 }
 
